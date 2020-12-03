@@ -1,0 +1,20 @@
+[package]
+name = "gameoflife"
+version = "0.1.0"
+authors = ["Amey Narkhede <ameynarkhede03@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bootloader = "0.9.11"
+volatile = "0.2.3"
+lazy_static = { version = "1.0", features = ["spin_no_std"] }
+spin = "0.7.0"
+oorandom = "11.1.3"
+
+[build]
+target = "x86_64-freestanding.json"
+
+[package.metadata.bootimage]
+default-target = "x86_64-freestanding.json"
