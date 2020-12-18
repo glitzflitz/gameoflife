@@ -1,5 +1,14 @@
 # Game of Life
 
+## Run the binary
+```
+git clone https://github.com/glitzflitz/gameoflife
+cd gameoflife
+chmod +x run.sh
+./run.sh
+```
+
+## Build
 ```
 git clone https://github.com/glitzflitz/gameoflife
 cd gameoflife
